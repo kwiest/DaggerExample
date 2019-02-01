@@ -3,6 +3,7 @@ package com.kylewiest.daggerapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kylewiest.daggerapp.beverage.Session
+import com.kylewiest.daggerapp.beverage.cold_brew.ColdBrew
 import com.kylewiest.daggerapp.beverage.drip.BellaDonovan
 import com.kylewiest.daggerapp.beverage.drip.Drip
 import com.kylewiest.daggerapp.beverage.ingredient.Roast
@@ -14,6 +15,8 @@ import com.kylewiest.daggerapp.di.DaggerHotChocolateComponent
 import com.kylewiest.daggerapp.di.DaggerMochaComponent
 import com.kylewiest.daggerapp.di.HotChocolateModule
 import com.kylewiest.daggerapp.di.MochaModule
+import dagger.android.AndroidInjection
+import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
@@ -115,5 +118,15 @@ class MainActivity : AppCompatActivity() {
     /*
      * Android Dagger example
      */
-    fun orderColdBrew() {}
+
+    @Inject
+    lateinit var coldBrew: ColdBrew
+
+    fun orderColdBrew() {
+        AndroidInjection.inject(this)
+
+        val order = Order(coldBrew)
+
+        order.commit()
+    }
 }
