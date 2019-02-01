@@ -22,8 +22,10 @@ class MainApplication : Application(), HasActivityInjector {
             .session(Session())
             .repositoryModule(
                 RepositoryModule(
-                "https://production.api.example.com",
-               "postgres://somelongawsstring"))
+                    "https://production.api.example.com",
+                    "postgres://somelongawsstring"
+                )
+            )
             .build()
             .inject(this)
     }

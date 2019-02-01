@@ -3,6 +3,7 @@ package com.kylewiest.daggerapp.customer
 import android.util.Log
 
 typealias BBEmail = String
+
 class Customer(val email: BBEmail) {
     private val TAG = "BLUEBOTTLE_CUSTOMER"
 

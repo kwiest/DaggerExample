@@ -5,10 +5,12 @@ import com.kylewiest.daggerapp.beverage.Session
 import dagger.BindsInstance
 import dagger.Component
 
-@Component(modules = [
-    HotChocolateModule::class,
-    MochaModule::class
-])
+@Component(
+    modules = [
+        HotChocolateModule::class,
+        MochaModule::class
+    ]
+)
 interface MochaComponent {
 
     @Component.Builder

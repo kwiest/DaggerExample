@@ -1,12 +1,12 @@
 package com.kylewiest.daggerapp.beverage.espresso
 
 import android.util.Log
-import com.kylewiest.daggerapp.*
+import com.kylewiest.daggerapp.Location
 import com.kylewiest.daggerapp.beverage.Beverage
 import com.kylewiest.daggerapp.beverage.BeverageType
-import com.kylewiest.daggerapp.beverage.ingredient.Roast
 import com.kylewiest.daggerapp.beverage.ingredient.Chocolate
 import com.kylewiest.daggerapp.beverage.ingredient.Milk
+import com.kylewiest.daggerapp.beverage.ingredient.Roast
 import com.kylewiest.daggerapp.customer.Customer
 import com.kylewiest.daggerapp.customer.Rewards
 
