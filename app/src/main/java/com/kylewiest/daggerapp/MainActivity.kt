@@ -1,14 +1,14 @@
 package com.kylewiest.daggerapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.kylewiest.daggerapp.beverage.Session
 import com.kylewiest.daggerapp.beverage.cold_brew.ColdBrew
 import com.kylewiest.daggerapp.beverage.drip.BellaDonovan
 import com.kylewiest.daggerapp.beverage.drip.Drip
-import com.kylewiest.daggerapp.beverage.ingredient.Roast
 import com.kylewiest.daggerapp.beverage.espresso.Latte
 import com.kylewiest.daggerapp.beverage.ingredient.Milk
+import com.kylewiest.daggerapp.beverage.ingredient.Roast
 import com.kylewiest.daggerapp.customer.Customer
 import com.kylewiest.daggerapp.customer.Rewards
 import com.kylewiest.daggerapp.di.DaggerHotChocolateComponent
