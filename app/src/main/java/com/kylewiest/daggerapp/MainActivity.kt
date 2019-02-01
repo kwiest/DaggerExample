@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
      */
     fun orderHotChocolate() {
         val component = DaggerHotChocolateComponent.builder()
-            .addHotChocolate(HotChocolateModule())
+            .hotChocolateModule(HotChocolateModule())
             .build()
 
         val hotChocolate = component.hotChocolate()

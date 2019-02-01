@@ -7,15 +7,6 @@ import dagger.Component
     HotChocolateModule::class
 ])
 interface HotChocolateComponent {
-
-    @Component.Builder
-    interface Builder {
-
-        fun addHotChocolate(module: HotChocolateModule): Builder
-
-        fun build(): HotChocolateComponent
-    }
-
     fun hotChocolate(): HotChocolate
 }
 
